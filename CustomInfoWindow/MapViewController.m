@@ -94,10 +94,9 @@ NSMutableArray *listEntries;
                                          bearing:currentCameraPostion.bearing
                                          viewingAngle:currentCameraPostion.viewingAngle];
     [_mapView animateToCameraPosition:markerPosition];
-    if (currentCameraPostion.target.latitude == markerPosition.target.latitude &&
-        currentCameraPostion.target.longitude == markerPosition.target.longitude) {
-        //TODO update info window
-        infoWindow.hidden = NO;
+    if (fabs(currentCameraPostion.target.latitude - markerPosition.target.latitude) < 0.00001 &&
+        fabs(currentCameraPostion.target.longitude == markerPosition.target.longitude) < 0.00001) {
+        infoWindow.hidden = !infoWindow.hidden;
     } else {
         infoWindow.hidden = YES;
         shouldShowInfoWindow = YES;
@@ -139,7 +138,6 @@ NSMutableArray *listEntries;
 
 - (void)mapView:(GMSMapView *)mapView idleAtCameraPosition:(GMSCameraPosition *)position {
     if (shouldShowInfoWindow) {
-        //TODO update info window
         infoWindow.hidden = NO;
     }
     shouldShowInfoWindow = NO;
