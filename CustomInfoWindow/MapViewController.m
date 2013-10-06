@@ -47,23 +47,23 @@ NSMutableArray *listEntries;
     //Some dummies location
     CLLocationCoordinate2D position = CLLocationCoordinate2DMake(34.73348,135.500109);
     GMSMarker *marker1 = [GMSMarker markerWithPosition:position];
-    marker1.title = @"Location title";
-    marker1.snippet = @"Location address here...";
+    marker1.title = @"Location title 1";
+    marker1.snippet = @"Location address 1 here...";
     marker1.icon = [UIImage imageNamed:@"marker.png"];
     marker1.map = _mapView;
     
     position = CLLocationCoordinate2DMake(34.732726,135.502775);
     GMSMarker *marker2 = [GMSMarker markerWithPosition:position];
-    marker2.title = @"Location title";
-    marker2.snippet = @"Location address here...";
+    marker2.title = @"Location title 2";
+    marker2.snippet = @"Location address 2 here...";
     marker2.icon = [UIImage imageNamed:@"marker.png"];
     marker2.map = _mapView;
     
     
     position = CLLocationCoordinate2DMake(34.734543,135.496724);
     GMSMarker *marker3 = [GMSMarker markerWithPosition:position];
-    marker3.title = @"Location title";
-    marker3.snippet = @"Location address here...";
+    marker3.title = @"Location title 3";
+    marker3.snippet = @"Location address 3 here...";
     marker3.icon = [UIImage imageNamed:@"marker.png"];
     marker3.map = _mapView;
     
@@ -116,10 +116,14 @@ NSMutableArray *listEntries;
 
 - (void)didTapInfoWindowOfMarker {
     NSLog(@"Tapped on info window");
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message" message:@"InfoWindow clicked." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)openDirectionApp {
     NSLog(@"Open direction app");
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message" message:@"Button clicked." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)mapView:(GMSMapView *)mapView didChangeCameraPosition:(GMSCameraPosition *)position {
