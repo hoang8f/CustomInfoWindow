@@ -1,6 +1,5 @@
 //
 //  MapViewController.m
-//  Muskoka
 //
 //  Created by Le Van Hoang on 7/22/13.
 //  Copyright (c) 2013 Custom InfoWindow. All rights reserved.
@@ -112,12 +111,8 @@ NSMutableArray *listEntries;
 }
 
 -(void)mapView:(GMSMapView *)mapView didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
+    //Hide InfoWindow when tapped outside
     infoWindow.hidden = YES;
-    NSLog(@"Did tap at coordinate: x= %f , y= %f", coordinate.latitude, coordinate.longitude);
-}
-
-- (void)backBtnClicked:(id)sender {
-//    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (void)didTapInfoWindowOfMarker {
@@ -130,26 +125,24 @@ NSMutableArray *listEntries;
 
 - (void)mapView:(GMSMapView *)mapView didChangeCameraPosition:(GMSCameraPosition *)position {
     currentCameraPostion = position;
-    NSLog(@"did change camera position");
 }
 
 - (void)mapView:(GMSMapView *)mapView willMove:(BOOL)gesture {
     if(gesture) {
-        NSLog(@"Gesture");
+        //Mapview is moved by gesture
         infoWindow.hidden = YES;
     } else {
-        NSLog(@"Animation");
+        //Mapview is moved by animation
+        //Do nothing
     }
 }
 
 - (void)mapView:(GMSMapView *)mapView idleAtCameraPosition:(GMSCameraPosition *)position {
-    NSLog(@"Idle at camera position");
     if (shouldShowInfoWindow) {
         //TODO update info window
         infoWindow.hidden = NO;
     }
     shouldShowInfoWindow = NO;
 }
-
 
 @end

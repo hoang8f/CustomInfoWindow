@@ -42,14 +42,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5B0B285718012F6F00467AC8 /* CustomInfoWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomInfoWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B0B285718012F6F00467AC8 /* InfoWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0B285A18012F6F00467AC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5B0B285C18012F6F00467AC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5B0B285E18012F6F00467AC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5B0B286218012F6F00467AC8 /* CustomInfoWindow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomInfoWindow-Info.plist"; sourceTree = "<group>"; };
+		5B0B286218012F6F00467AC8 /* InfoWindow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InfoWindow-Info.plist"; sourceTree = "<group>"; };
 		5B0B286418012F6F00467AC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B0B286618012F6F00467AC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5B0B286818012F6F00467AC8 /* CustomInfoWindow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomInfoWindow-Prefix.pch"; sourceTree = "<group>"; };
+		5B0B286818012F6F00467AC8 /* InfoWindow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InfoWindow-Prefix.pch"; sourceTree = "<group>"; };
 		5B0B286918012F6F00467AC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5B0B286A18012F6F00467AC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5B0B286C18012F6F00467AC8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		5B0B285818012F6F00467AC8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B0B285718012F6F00467AC8 /* CustomInfoWindow.app */,
+				5B0B285718012F6F00467AC8 /* InfoWindow.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,10 +172,10 @@
 		5B0B286118012F6F00467AC8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5B0B286218012F6F00467AC8 /* CustomInfoWindow-Info.plist */,
+				5B0B286218012F6F00467AC8 /* InfoWindow-Info.plist */,
 				5B0B286318012F6F00467AC8 /* InfoPlist.strings */,
 				5B0B286618012F6F00467AC8 /* main.m */,
-				5B0B286818012F6F00467AC8 /* CustomInfoWindow-Prefix.pch */,
+				5B0B286818012F6F00467AC8 /* InfoWindow-Prefix.pch */,
 				5B0B286C18012F6F00467AC8 /* Default.png */,
 				5B0B286E18012F6F00467AC8 /* Default@2x.png */,
 				5B0B287018012F6F00467AC8 /* Default-568h@2x.png */,
@@ -199,9 +199,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5B0B285618012F6F00467AC8 /* CustomInfoWindow */ = {
+		5B0B285618012F6F00467AC8 /* InfoWindow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B0B287A18012F6F00467AC8 /* Build configuration list for PBXNativeTarget "CustomInfoWindow" */;
+			buildConfigurationList = 5B0B287A18012F6F00467AC8 /* Build configuration list for PBXNativeTarget "InfoWindow" */;
 			buildPhases = (
 				5B0B285318012F6F00467AC8 /* Sources */,
 				5B0B285418012F6F00467AC8 /* Frameworks */,
@@ -211,9 +211,9 @@
 			);
 			dependencies = (
 			);
-			name = CustomInfoWindow;
+			name = InfoWindow;
 			productName = CustomInfoWindow;
-			productReference = 5B0B285718012F6F00467AC8 /* CustomInfoWindow.app */;
+			productReference = 5B0B285718012F6F00467AC8 /* InfoWindow.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -224,7 +224,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = 5B0B285218012F6F00467AC8 /* Build configuration list for PBXProject "CustomInfoWindow" */;
+			buildConfigurationList = 5B0B285218012F6F00467AC8 /* Build configuration list for PBXProject "InfoWindow" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -236,7 +236,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5B0B285618012F6F00467AC8 /* CustomInfoWindow */,
+				5B0B285618012F6F00467AC8 /* InfoWindow */,
 			);
 		};
 /* End PBXProject section */
@@ -361,11 +361,11 @@
 					"\"$(SRCROOT)/GoogleMaps-iOS-1.5.0\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CustomInfoWindow/CustomInfoWindow-Prefix.pch";
-				INFOPLIST_FILE = "CustomInfoWindow/CustomInfoWindow-Info.plist";
+				GCC_PREFIX_HEADER = "CustomInfoWindow/InfoWindow-Prefix.pch";
+				INFOPLIST_FILE = "CustomInfoWindow/InfoWindow-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = InfoWindow;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -379,11 +379,11 @@
 					"\"$(SRCROOT)/GoogleMaps-iOS-1.5.0\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CustomInfoWindow/CustomInfoWindow-Prefix.pch";
-				INFOPLIST_FILE = "CustomInfoWindow/CustomInfoWindow-Info.plist";
+				GCC_PREFIX_HEADER = "CustomInfoWindow/InfoWindow-Prefix.pch";
+				INFOPLIST_FILE = "CustomInfoWindow/InfoWindow-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = InfoWindow;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,7 +392,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5B0B285218012F6F00467AC8 /* Build configuration list for PBXProject "CustomInfoWindow" */ = {
+		5B0B285218012F6F00467AC8 /* Build configuration list for PBXProject "InfoWindow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B0B287818012F6F00467AC8 /* Debug */,
@@ -401,7 +401,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B0B287A18012F6F00467AC8 /* Build configuration list for PBXNativeTarget "CustomInfoWindow" */ = {
+		5B0B287A18012F6F00467AC8 /* Build configuration list for PBXNativeTarget "InfoWindow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B0B287B18012F6F00467AC8 /* Debug */,

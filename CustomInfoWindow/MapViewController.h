@@ -1,6 +1,5 @@
 //
 //  MapViewController.h
-//  Muskoka
 //
 //  Created by Le Van Hoang on 7/22/13.
 //  Copyright (c) 2013 Custom InfoWindow. All rights reserved.
